@@ -31,11 +31,11 @@ app.use((req, res, next) => {
 // * Routes * //
 
 app.use('/session', routes.session);
-app.use('/users', routes.user);
+app.use('/user', routes.user);
 app.use('/messages', routes.message);
 
 // * Start * //
 
 app.listen(process.env.PORT, () =>
-  console.log(`Example app listening on port ${process.env.PORT}!`),
+  console.log(`listening on port ${process.env.PORT}!`),
 );
